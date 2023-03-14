@@ -12,7 +12,7 @@ const showData = () => {
   //We have to handle that promise by getting the http response and get the actual json body
   dataName
     .then((res) => res.json())
-    //using res.json returns a promise so we have to handle that promise by getting the body named data below
+    //using res.json returns a promise so we have to handle that promise by getting the data
     .then((data) => {
       //Loop through each object and send them to the helperArray Array
       for (let i = 0; i < data.length; i++) {
