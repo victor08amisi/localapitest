@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Ottawa",
+    "Temp": "-10 degrees"
+  },
+  {
+    "name": "Toronto",
+    "Temp": "-6 degrees"
+  },
+
+  {
+    "name": "Gatineau",
+    "Temp": "-2 degrees"
+  }
+]
