@@ -9,10 +9,10 @@ let helperArray = [];
 const showData = () => {
   //The fetch function  gets data from a server and returns a promise
   dataName = fetch("data.json");
-  //We have to handle that promise by getting thehttp response and get the actual json body
+  //We have to handle that promise by getting the http response and get the actual json body
   dataName
     .then((res) => res.json())
-    //using res.json returns a promise so we have to handle that promise by printing the data
+    //using res.json returns a promise so we have to handle that promise by getting the body named data below
     .then((data) => {
       //Loop through each object and send them to the helperArray Array
       for (let i = 0; i < data.length; i++) {
@@ -22,9 +22,9 @@ const showData = () => {
   //The function will return the Array populated with 3 objects from the data.json file
   return helperArray;
 };
+
 /*-------------------Phase 2 -----------------------*/
 const addElement = () => {
-  showData();
   //Loop through each object, create a div, header and list item
   data = showData();
   data.forEach((value) => {
